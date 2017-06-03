@@ -52,6 +52,8 @@
                     'url': this.url
                 };
                 this.$emit('callback', data);
+                this.name = "";
+                this.url = "";
             }
         },
         mounted(){
