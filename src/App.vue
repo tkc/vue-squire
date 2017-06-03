@@ -90,20 +90,26 @@
         },
         methods: {
             changeH1(){
-                this.isH1 = !this.isH1
+                this.isH1 = !this.isH1;
+                this.isBold = false;
+                this.isItalic = false;
             },
             changeBold(){
-                this.isBold = !this.isBold
+                this.isH1 = false;
+                this.isBold = !this.isBold;
+                this.isItalic = false;
             },
             changeItalic(){
-                this.isItalic = !this.isItalic
+                this.isH1 = false;
+                this.isBold = false;
+                this.isItalic = !this.isItalic;
             },
             insertLink(val){
                 if (!val.name || !val.url) {
                     this.imageModalShow = !this.imageModalShow;
                 } else {
                     this.imageModalShow = !this.imageModalShow;
-                    const html = "<a href='" + val.name + "'>" + val.url + "</a>";
+                    const html = "<a target='_blank' href='" + val.name + "'>" + val.url + "</a>";
                     this.editor.insertHTML(html);
                 }
             },
