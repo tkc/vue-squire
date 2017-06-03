@@ -109,7 +109,7 @@
                     this.imageModalShow = !this.imageModalShow;
                 } else {
                     this.imageModalShow = !this.imageModalShow;
-                    const html = "<a target='_blank' href='" + val.name + "'>" + val.url + "</a>";
+                    const html = "<a target='_blank' href='" + val.url + "'>" + val.name + "</a>";
                     this.editor.insertHTML(html);
                 }
             },
