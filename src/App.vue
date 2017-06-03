@@ -12,13 +12,13 @@
             <div class="col-sm-12 col-sm-offset-0 col-md-8 col-md-offset-2">
                 <div class="menu">
                     <div class="group">
-                        <div @click="changeH1" class="item" :class="{ active: isH1}">
+                        <div @click="changeH1" class="item" :class="{ active: isH1 }">
                             <i class="fa fa-header"></i>
                         </div>
-                        <div @click="changeBold" class="item" :class="{ active: isBold}">
+                        <div @click="changeBold" class="item" :class="{ active: isBold }">
                             <i class="fa fa-bold"></i>
                         </div>
-                        <div @click="changeItalic" class="item" :class="{ active: isItalic}">
+                        <div @click="changeItalic" class="item" :class="{ active: isItalic }">
                             <i class="fa fa-italic"></i>
                         </div>
                     </div>
